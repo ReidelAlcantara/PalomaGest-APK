@@ -8,7 +8,8 @@ API en la nube: tu cuenta y tus datos están sincronizados entre web, PWA y Andr
 
 | Versión | APK | Android mínimo |
 |---------|-----|----------------|
-| **v3.7.0** (actual) | [PalomaGest-v3.7.0.apk](https://github.com/ReidelAlcantara/PalomaGest-APK/releases/download/v3.7.0/PalomaGest-v3.7.0.apk) | 7.0 (API 24) |
+| **v3.8.0** (actual) | [PalomaGest-v3.8.0.apk](https://github.com/ReidelAlcantara/PalomaGest-APK/releases/download/v3.8.0/PalomaGest-v3.8.0.apk) | 7.0 (API 24) |
+| v3.7.0 | [Release v3.7.0](https://github.com/ReidelAlcantara/PalomaGest-APK/releases/tag/v3.7.0) | 7.0 (API 24) |
 | v3.6.2 | [Release v3.6.2](https://github.com/ReidelAlcantara/PalomaGest-APK/releases/tag/v3.6.2) | 7.0 (API 24) |
 | v3.5.3 | [Release v3.5.3](https://github.com/ReidelAlcantara/PalomaGest-APK/releases/tag/v3.5.3) | 7.0 (API 24) |
 
@@ -24,13 +25,13 @@ API en la nube: tu cuenta y tus datos están sincronizados entre web, PWA y Andr
 
 > La app Android usa el mismo backend que https://gestion-de-palomares-web-telegram-e.vercel.app — no es necesario volver a registrarse si ya tienes cuenta.
 
-## ✨ Novedades v3.7.0
+## ✨ Novedades v3.8.0
 
-- 🔒 **Auditoría de seguridad en 5 fases**: autenticación obligatoria en todas las rutas API, anti fuerza bruta en el login, sesiones revocables y 8 cabeceras de seguridad
-- 📱 FIX MiniApp de Telegram (recursos desbloqueados: expansión, tema y datos nativos)
-- ⚡ Base de datos migrada a Prisma 7 — consultas más rápidas
-- 🧹 26 correcciones de renderizado: interfaz más fluida y estable
-- 👁️ Monitorización de errores con Sentry
+- 📴 **Modo Offline real**: consulta palomas y capturas sin datos móviles
+- 📝 **Registra capturas en el campo sin conexión** — se sincronizan solas al reconectar
+- ✏️ Alta de palomas, edición y baja también offline
+- 🔄 Sync bidireccional automática (apertura, reconexión, primer plano) con panel de estado en Configuración
+- 🛡️ Idempotencia total: cortes de conexión a mitad de sync nunca duplican datos
 
 Historial completo: [CHANGELOG-APK.md](./CHANGELOG-APK.md)
 
