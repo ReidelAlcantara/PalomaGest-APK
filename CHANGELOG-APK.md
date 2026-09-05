@@ -4,6 +4,21 @@ Historial de versiones publicadas del APK de Android.
 
 ---
 
+## [3.9.0] — 2026-09-06
+
+### 📴 Modo Offline completo: Tratamientos, Reproducción y Compra/Venta
+
+- **Registra tratamientos en el campo sin conexión** (con vademécum y frecuencias guardados en el equipo)
+- Consulta y búsqueda de tratamientos offline; cierre de tratamiento offline (se marca terminado y recalcula duración)
+- **Registra cruces sin conexión**: elige padres y corredores desde la copia local del palomar
+- Evolución de fase del cruce, marcar cruce fallido y **registrar pichones offline** — todo sin datos
+- **Compra/venta de palomas sin conexión**: la compra crea la paloma y la transacción en una sola operación; la venta registra la baja y la venta juntas
+- Transacciones de artículos (accesorios, granos, medicina) también offline
+- Resumen de compras/ventas calculado en local cuando no hay red
+- Reglas de negocio centralizadas en el servidor: la cola offline nunca produce datos inconsistentes (fechas imposibles, cruces duplicados, ventas ajenas)
+
+---
+
 ## [3.8.0] — 2026-09-06
 
 ### 📴 Modo Offline: tus datos sin conexión + sync automática
