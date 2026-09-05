@@ -8,7 +8,8 @@ API en la nube: tu cuenta y tus datos están sincronizados entre web, PWA y Andr
 
 | Versión | APK | Android mínimo |
 |---------|-----|----------------|
-| **v3.8.0** (actual) | [PalomaGest-v3.8.0.apk](https://github.com/ReidelAlcantara/PalomaGest-APK/releases/download/v3.8.0/PalomaGest-v3.8.0.apk) | 7.0 (API 24) |
+| **v3.9.0** (actual) | [PalomaGest-v3.9.0.apk](https://github.com/ReidelAlcantara/PalomaGest-APK/releases/download/v3.9.0/PalomaGest-v3.9.0.apk) | 7.0 (API 24) |
+| v3.8.0 | [Release v3.8.0](https://github.com/ReidelAlcantara/PalomaGest-APK/releases/tag/v3.8.0) | 7.0 (API 24) |
 | v3.7.0 | [Release v3.7.0](https://github.com/ReidelAlcantara/PalomaGest-APK/releases/tag/v3.7.0) | 7.0 (API 24) |
 | v3.6.2 | [Release v3.6.2](https://github.com/ReidelAlcantara/PalomaGest-APK/releases/tag/v3.6.2) | 7.0 (API 24) |
 | v3.5.3 | [Release v3.5.3](https://github.com/ReidelAlcantara/PalomaGest-APK/releases/tag/v3.5.3) | 7.0 (API 24) |
@@ -25,13 +26,13 @@ API en la nube: tu cuenta y tus datos están sincronizados entre web, PWA y Andr
 
 > La app Android usa el mismo backend que https://gestion-de-palomares-web-telegram-e.vercel.app — no es necesario volver a registrarse si ya tienes cuenta.
 
-## ✨ Novedades v3.8.0
+## ✨ Novedades v3.9.0
 
-- 📴 **Modo Offline real**: consulta palomas y capturas sin datos móviles
-- 📝 **Registra capturas en el campo sin conexión** — se sincronizan solas al reconectar
-- ✏️ Alta de palomas, edición y baja también offline
-- 🔄 Sync bidireccional automática (apertura, reconexión, primer plano) con panel de estado en Configuración
-- 🛡️ Idempotencia total: cortes de conexión a mitad de sync nunca duplican datos
+- 🏥 **Tratamientos offline**: registra en el campo, consulta y cierra ciclos sin conexión
+- 🥚 **Reproducción offline**: cruces, evolución de fases, marcar fallidos y registrar pichones
+- 💰 **Compra/venta offline**: compra crea paloma+transacción en una operación; venta registra baja+venta
+- 📊 Resumen de transacciones calculado en local
+- 🛡️ Reglas de negocio en el servidor: la cola offline jamás crea datos inconsistentes
 
 Historial completo: [CHANGELOG-APK.md](./CHANGELOG-APK.md)
 
