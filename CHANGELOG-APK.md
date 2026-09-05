@@ -4,6 +4,20 @@ Historial de versiones publicadas del APK de Android.
 
 ---
 
+## [3.8.0] — 2026-09-06
+
+### 📴 Modo Offline: tus datos sin conexión + sync automática
+
+- Consulta palomas y capturas sin datos móviles (copia local en el dispositivo, siempre disponible)
+- **Registra capturas en el campo sin conexión** — se sincronizan solas al reconectar
+- Alta de palomas, edición de perfil y baja también funcionan offline
+- Sincronización bidireccional automática: al abrir la app, al recuperar la red y al volver a primer plano
+- Panel de sincronización en Configuración: estado, cambios pendientes y botón "Sincronizar ahora"
+- Operaciones idempotentes: si la conexión se corta a mitad de sync, nada se duplica
+- Base de datos migrada a índices de sincronización por usuario (Prisma 7 + soft deletes)
+
+---
+
 ## [3.7.0] — 2026-09-05
 
 ### 🔒 Auditoría de seguridad completa (5 fases) + estabilidad y rendimiento
