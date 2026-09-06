@@ -4,6 +4,20 @@ Historial de versiones publicadas del APK de Android.
 
 ---
 
+## [3.10.0] — 2026-09-06
+
+### 🔐 Cuentas con Google + edición de capturas sin conexión
+
+- **"Continuar con Google"** en el login: crea tu cuenta o entra con un toque, sin contraseñas
+- Si ya tenías cuenta con email, Google se **vincula automáticamente** (conservas tu contraseña: ambos accesos funcionan)
+- Login verificado 100% en servidor (firma, audiencia y email verificado) con las mismas sesiones revocables de siempre
+- **Edita capturas sin conexión**: corrige nombre, anilla, color, sexo, raza, fecha, hora, clima y observaciones en campo
+- **Elimina capturas offline** con confirmación — el borrado se sincroniza y se propaga a tus otros dispositivos
+- El historial de éxitos por palomo abre **instantáneo** desde la copia local (estadísticas y gráfico mensual incluidos)
+- Mantiene todo el modo offline de v3.8/v3.9: las 5 entidades consultan, crean, editan y sincronizan sin datos
+
+---
+
 ## [3.9.0] — 2026-09-06
 
 ### 📴 Modo Offline completo: Tratamientos, Reproducción y Compra/Venta
