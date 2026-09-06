@@ -4,6 +4,21 @@ Historial de versiones publicadas del APK de Android.
 
 ---
 
+## [4.0.0] — 2026-09-06
+
+### 🚀 Nueva generación: flujo Cuenta → Palomar y navegación renovada
+
+- **NUEVO flujo de alta**: "Empezar Gratis" crea primero la **cuenta** (correo, Google o Telegram) y **después** se configura el palomar — fin del error "Acceso denegado, abre desde Telegram"
+- **Logo del palomar elegido por el usuario**: se sube desde galería/cámara en el paso de configuración y en Configuración → Perfil (la foto de Telegram ya no lo sobrescribe)
+- **Cerrar sesión** ahora existe en la UI (hoja "Más" en web/PWA)
+- Landing renovado: icono oficial centrado sobre el badge de versión
+- Configuración reorganizada: color e icono propios por lista (colores, razas, clima, categorías) con contador de ítems
+- Administración también por correo (ADMIN_EMAIL) además del ID de Telegram
+- Modo offline auditado y documentado por fases (docs/offline-fases-restantes.md)
+- En la **APK se conserva el drawer** clásico junto a la barra inferior — el cambio de barra flotante aplica solo a web/PWA
+
+---
+
 ## [3.10.0] — 2026-09-06
 
 ### 🔐 Cuentas con Google + edición de capturas sin conexión
