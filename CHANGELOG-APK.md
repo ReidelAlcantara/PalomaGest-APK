@@ -4,6 +4,22 @@ Historial de versiones publicadas del APK de Android.
 
 ---
 
+
+## [4.1.0] — 2026-09-07
+
+### 📴 Modo Offline para los contornos: catálogos, calendario, competiciones y mercado
+
+- **Catálogos y perfil offline (Fase C1)**: colores, razas, clima, categorías y vademécum se consultan y editan sin conexión — se sincronizan al reconectar (operaciones idempotentes por usuario+lista+valor, sin duplicados)
+- **Onboarding 100% offline**: una cuenta nueva sin datos móviles completa el asistente entero, incluidas las listas base del palomar (FIX: el wizard enviaba `listType` en vez de `type`)
+- **Calendario de tratamientos offline (Fase C2)**: el calendario mensual de dosis se deriva del espejo local con la misma lógica del servidor — abre al instante sin conexión
+- **Retirar paciente de un tratamiento (Fase C3)**: botón "Retirar paciente" en la ficha médica, con historial y réplica multi-dispositivo por sincronización (paridad con el DELETE REST)
+- **Competiciones y Mercado en lectura offline (Fase C4)**: caché global de solo lectura con TTL de 24 h y aviso "Datos de hace Xh"; las escrituras siguen validándose en el servidor
+- **Perfil del palomar editable sin conexión** (nombre, ubicación, logo), con aviso de guardado offline
+- Los formularios de alta (paloma, captura, tratamiento, compra-venta) leen catálogos cache-first desde el primer uso
+- 158 tests automáticos (+22); C5 (merge campo-a-campo) queda condicionada a demanda real
+
+---
+
 ## [4.0.0] — 2026-09-06
 
 ### 🚀 Nueva generación: flujo Cuenta → Palomar y navegación renovada
