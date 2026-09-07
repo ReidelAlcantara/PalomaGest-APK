@@ -20,6 +20,27 @@ Historial de versiones publicadas del APK de Android.
 
 ---
 
+
+## [4.2.0] — 2026-09-07
+
+### 🔐 Login simplificado + FIX del cuelgue de Google + auditoría completa
+
+- **Solo Google y Telegram**: eliminado el registro/login por correo (básico y sin verificación). Si tu cuenta era de correo, entra con **Google usando el mismo correo** — tu palomar se vincula automáticamente
+- **FIX Google colgado**: nuevo flujo de redirección completa (sin popups) — tras elegir tu cuenta y aceptar, la app vuelve sola; funciona en web, PWA y APK
+- **APK**: tras el login con Google, la sesión vuelve automáticamente al shell nativo de la app (deep link interno) — antes quedabas atrapado en la versión web
+- Auditoría exhaustiva (67 rutas API + motor offline + UI): 1 crítico + 9 bugs de alto impacto corregidos — informe completo en `docs/auditoria-v4.2.0.md` del repo
+- FIX crítico: un usuario ya no puede borrar imágenes de otros usuarios (aislamiento por carpeta en Cloudinary)
+- FIX crítico: el trabajo offline ya NO se pierde al expirar la sesión — la cola de sincronización sobrevive al re-login
+- FIX catálogos offline (colores, razas, clima, categorías, vademécum): ahora se leen del espejo local correctamente tras el primer sync
+- FIX calendario de tratamientos offline: los días coinciden exactamente con el servidor en cualquier zona horaria (incluida Cuba)
+- FIX: tratamientos y reproducciones borrados sin conexión ya NO reaparecen en las vistas online
+- FIX: máximo 3 pichones por reproducción también por la vía online; los puntos de premios ya no se duplican al corregir resultados
+- MiniApp de Telegram: arranque corregido (expansión, tema y drawer desde el primer segundo)
+- Pagos con Telegram Stars idempotentes: un reintento del webhook ya no extiende la licencia otro año
+- 182 tests automáticos (+24 de regresión)
+
+---
+
 ## [4.0.0] — 2026-09-06
 
 ### 🚀 Nueva generación: flujo Cuenta → Palomar y navegación renovada
